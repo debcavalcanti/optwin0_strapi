@@ -1,0 +1,50 @@
+{
+  "collectionName": "components_simulation_header_simulation_headers",
+  "info": {
+    "displayName": "SimulationHeader",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text"
+    },
+    "optimizationType": {
+      "type": "enumeration",
+      "enum": [
+        "DEFAULT",
+        "FAST",
+        "ACCURATE"
+      ],
+      "required": false
+    },
+    "cicleDuration": {
+      "type": "biginteger",
+      "required": false,
+      "default": "0"
+    },
+    "cicleDurationPeriod": {
+      "type": "enumeration",
+      "enum": [
+        "SECOND",
+        "MINUTE",
+        "HOUR",
+        "DAY",
+        "WEEK",
+        "MONTH",
+        "YEAR"
+      ],
+      "required": false
+    },
+    "datetimeInitOpt": {
+      "type": "datetime"
+    },
+    "datetimeEndOpt": {
+      "type": "datetime"
+    }
+  }
+}

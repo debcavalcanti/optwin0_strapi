@@ -1,0 +1,20 @@
+{
+  "kind": "collectionType",
+  "collectionName": "weekdays",
+  "info": {
+    "singularName": "weekday",
+    "pluralName": "weekdays",
+    "displayName": "weekday",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Weekday": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

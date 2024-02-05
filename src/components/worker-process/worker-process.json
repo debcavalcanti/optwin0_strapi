@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_worker_process_worker_processes",
+  "info": {
+    "displayName": "WorkerProcess"
+  },
+  "options": {},
+  "attributes": {
+    "worker": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::worker.worker"
+    },
+    "workerActivity": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

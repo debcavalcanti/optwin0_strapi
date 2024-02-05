@@ -1,0 +1,40 @@
+{
+  "kind": "collectionType",
+  "collectionName": "inventories",
+  "info": {
+    "singularName": "inventory",
+    "pluralName": "inventories",
+    "displayName": "Inventory",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "reference": {
+      "type": "string"
+    },
+    "product": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::product.product"
+    },
+    "quantity": {
+      "type": "decimal",
+      "min": 0
+    },
+    "dateSchedule": {
+      "type": "datetime"
+    },
+    "quantitySchedule": {
+      "type": "decimal",
+      "min": 0
+    },
+    "workstation": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::workstation.workstation"
+    }
+  }
+}

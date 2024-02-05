@@ -1,0 +1,32 @@
+{
+  "collectionName": "components_info_infos",
+  "info": {
+    "displayName": "info",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "idExternal": {
+      "type": "string"
+    },
+    "active": {
+      "type": "enumeration",
+      "enum": [
+        "ACTIVE",
+        "PAUSED",
+        "DEACTIVATED"
+      ],
+      "default": "ACTIVE",
+      "required": true
+    },
+    "pauseSchedule": {
+      "type": "component",
+      "repeatable": true,
+      "component": "pause-schedule.pause-schedule"
+    }
+  }
+}

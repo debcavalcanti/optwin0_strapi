@@ -1,0 +1,47 @@
+{
+  "collectionName": "components_input_output_data_input_output_data",
+  "info": {
+    "displayName": "InputOutputData",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "output": {
+      "displayName": "InputData",
+      "type": "component",
+      "repeatable": true,
+      "component": "input-data.input-data"
+    },
+    "input": {
+      "type": "component",
+      "repeatable": true,
+      "component": "input-data.input-data"
+    },
+    "processTime": {
+      "type": "integer",
+      "min": 0
+    },
+    "processPeriod": {
+      "type": "enumeration",
+      "enum": [
+        "SECOND",
+        "MINUTE",
+        "HOUR",
+        "DAY",
+        "WEEK",
+        "MONTH",
+        "YEAR"
+      ],
+      "required": true
+    },
+    "active": {
+      "type": "enumeration",
+      "enum": [
+        "ACTIVE",
+        "PAUSED",
+        "DEACTIVATED"
+      ],
+      "default": "ACTIVE"
+    }
+  }
+}

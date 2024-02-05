@@ -1,0 +1,69 @@
+{
+  "kind": "collectionType",
+  "collectionName": "workstations",
+  "info": {
+    "singularName": "workstation",
+    "pluralName": "workstations",
+    "displayName": "Workstation",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "info": {
+      "type": "component",
+      "repeatable": false,
+      "component": "info.info",
+      "required": true
+    },
+    "description": {
+      "type": "text"
+    },
+    "startOperation": {
+      "type": "decimal"
+    },
+    "waitCost": {
+      "type": "decimal",
+      "min": 0
+    },
+    "energyCost": {
+      "type": "decimal",
+      "min": 0
+    },
+    "setupTime": {
+      "type": "biginteger",
+      "min": "0"
+    },
+    "setupPeriod": {
+      "type": "enumeration",
+      "enum": [
+        "SECOND",
+        "MINUTE",
+        "HOUR",
+        "DAY",
+        "WEEK",
+        "MONTH",
+        "YEAR"
+      ]
+    },
+    "priority": {
+      "type": "integer",
+      "min": 0,
+      "max": 10
+    },
+    "ioList": {
+      "displayName": "InputOutputData",
+      "type": "component",
+      "repeatable": true,
+      "component": "input-output-data.input-output-data"
+    },
+    "workerList": {
+      "displayName": "WorkerProcess",
+      "type": "component",
+      "repeatable": true,
+      "component": "worker-process.worker-process"
+    }
+  }
+}

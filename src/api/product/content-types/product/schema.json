@@ -1,0 +1,78 @@
+{
+  "kind": "collectionType",
+  "collectionName": "products",
+  "info": {
+    "singularName": "product",
+    "pluralName": "products",
+    "displayName": "Product",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "description": {
+      "type": "text"
+    },
+    "perishable": {
+      "type": "boolean",
+      "default": false
+    },
+    "timePerishable": {
+      "type": "biginteger",
+      "min": "0",
+      "default": "0"
+    },
+    "raw": {
+      "type": "boolean",
+      "default": false
+    },
+    "intermediate": {
+      "type": "boolean",
+      "default": false
+    },
+    "finished": {
+      "type": "boolean",
+      "default": false
+    },
+    "maxQntStorage": {
+      "type": "biginteger",
+      "min": "0",
+      "default": "0"
+    },
+    "inputTime": {
+      "type": "biginteger",
+      "min": "0",
+      "default": "0"
+    },
+    "inputPeriod": {
+      "type": "enumeration",
+      "enum": [
+        "SECOND",
+        "MINUTE",
+        "HOUR",
+        "DAY",
+        "WEEK",
+        "MONTH",
+        "YEAR"
+      ]
+    },
+    "inputQnt": {
+      "type": "biginteger",
+      "min": "0",
+      "default": "0"
+    },
+    "price": {
+      "type": "decimal",
+      "min": 0,
+      "default": 0
+    },
+    "info": {
+      "type": "component",
+      "repeatable": false,
+      "component": "info.info",
+      "required": true
+    }
+  }
+}

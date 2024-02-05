@@ -1,0 +1,24 @@
+{
+  "collectionName": "components_schedule_plan_schedule_plans",
+  "info": {
+    "displayName": "SchedulePlan",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "product": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::product.product"
+    },
+    "quantity": {
+      "type": "decimal"
+    },
+    "date": {
+      "type": "datetime"
+    },
+    "order": {
+      "type": "string"
+    }
+  }
+}

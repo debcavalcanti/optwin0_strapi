@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_pause_schedule_pause_schedules",
+  "info": {
+    "displayName": "pauseSchedule",
+    "icon": "calendar",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "ONCE",
+        "RECURING",
+        "CUSTOM"
+      ]
+    },
+    "start": {
+      "type": "datetime"
+    },
+    "end": {
+      "type": "datetime"
+    }
+  }
+}

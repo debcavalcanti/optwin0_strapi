@@ -1,0 +1,52 @@
+{
+  "kind": "collectionType",
+  "collectionName": "optimizations",
+  "info": {
+    "singularName": "optimization",
+    "pluralName": "optimizations",
+    "displayName": "Optimization",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "simulationHeader": {
+      "displayName": "SimulationHeader",
+      "type": "component",
+      "repeatable": false,
+      "component": "simulation-header.simulation-header",
+      "required": true
+    },
+    "status": {
+      "type": "enumeration",
+      "enum": [
+        "DRAFT",
+        "SAVED",
+        "SENT",
+        "RECEIVED",
+        "ERROR"
+      ],
+      "default": "DRAFT"
+    },
+    "jsonRequest": {
+      "type": "json"
+    },
+    "jsonResponse": {
+      "type": "json"
+    },
+    "schedulePlan": {
+      "type": "component",
+      "repeatable": true,
+      "component": "schedule-plan.schedule-plan"
+    },
+    "optimizationGoal": {
+      "type": "enumeration",
+      "enum": [
+        "MaxProduction",
+        "AsQuicklyAsPossible"
+      ]
+    }
+  }
+}

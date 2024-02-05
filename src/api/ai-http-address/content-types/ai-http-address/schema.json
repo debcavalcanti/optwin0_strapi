@@ -1,0 +1,20 @@
+{
+  "kind": "singleType",
+  "collectionName": "ai_http_addresses",
+  "info": {
+    "singularName": "ai-http-address",
+    "pluralName": "ai-http-addresses",
+    "displayName": "AiHttpAddress",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "httpAddress": {
+      "type": "string",
+      "required": true
+    }
+  }
+}
